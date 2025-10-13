@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colectivo de Músicos Yeso</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- No hace falta incluir aquí el embedr.flickr.com porque usamos iframe -->
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo-yeso.png" alt="Logo Yeso" height="30" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#que-es-yeso">¿Qué es Yeso?</a></li>
+        <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+        <li class="nav-item"><a class="nav-link" href="#quienes-somos">Quiénes somos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CARRUSEL -->
+<section id="carrusel" class="mt-5">
+  <div id="carouselYeso" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover">
+    
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselYeso" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselYeso" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselYeso" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#carouselYeso" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#carouselYeso" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#carouselYeso" data-bs-slide-to="5"></button>
+      <button type="button" data-bs-target="#carouselYeso" data-bs-slide-to="6"></button>
+      <button type="button" data-bs-target="#carouselYeso" data-bs-slide-to="7"></button>
+      <button type="button" data-bs-target="#carouselYeso" data-bs-slide-to="8"></button>
+      <button type="button" data-bs-target="#carouselYeso" data-bs-slide-to="9"></button>
+      <button type="button" data-bs-target="#carouselYeso" data-bs-slide-to="10"></button>
+    </div>
+
+    <!-- Imágenes -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/0.jpg" class="d-block w-100" alt="Imagen 0">
+      </div>
+      <div class="carousel-item">
+        <img src="images/1.jpg" class="d-block w-100" alt="Imagen 1">
+      </div>
+      <div class="carousel-item">
+        <img src="images/2.jpg" class="d-block w-100" alt="Imagen 2">
+      </div>
+      <div class="carousel-item">
+        <img src="images/3.jpg" class="d-block w-100" alt="Imagen 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/4.jpg" class="d-block w-100" alt="Imagen 4">
+      </div>
+      <div class="carousel-item">
+        <img src="images/5.jpg" class="d-block w-100" alt="Imagen 5">
+      </div>
+      <div class="carousel-item">
+        <img src="images/6.jpg" class="d-block w-100" alt="Imagen 6">
+      </div>
+      <div class="carousel-item">
+        <img src="images/7.jpg" class="d-block w-100" alt="Imagen 7">
+      </div>
+      <div class="carousel-item">
+        <img src="images/8.jpg" class="d-block w-100" alt="Imagen 8">
+      </div>
+      <div class="carousel-item">
+        <img src="images/9.jpg" class="d-block w-100" alt="Imagen 9">
+      </div>
+      <div class="carousel-item">
+        <img src="images/10.jpg" class="d-block w-100" alt="Imagen 10">
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselYeso" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselYeso" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- SECCIÓN ¿QUÉ ES YESO? -->
+<section id="que-es-yeso" class="container py-5">
+  <h2 class="mb-4">¿Qué es Yeso?</h2>
+  <div class="ratio ratio-16x9">
+    <iframe src="https://www.youtube.com/embed/5LlXicusiTE" title="Video de Yeso" allowfullscreen></iframe>
+  </div>
+</section>
+
+<div class="container" style="margin-top: 80px;">
+
+  <!-- VIDEOS -->
+  <section id="videos" class="mt-5">
+    <h2 id="playlist-title">Música de Acá pa Acá</h2>
+
+    <div class="d-flex justify-content-center mb-3">
+  <div class="btn-group" role="group">
+    <button class="btn btn-outline-primary" onclick="cambiarPlaylist('Música de Acá pa Acá')">Música de Acá pa Acá</button>
+    <button class="btn btn-outline-primary" onclick="cambiarPlaylist('Ciclo 2016')">Ciclo 2016</button>
+    <button class="btn btn-outline-primary" onclick="cambiarPlaylist('Ciclo 2015')">Ciclo 2015</button>
+    <button class="btn btn-outline-primary" onclick="cambiarPlaylist('Ciclo 2014')">Ciclo 2014</button>
+    <button class="btn btn-outline-primary" onclick="cambiarPlaylist('Ciclo 2013')">Ciclo 2013</button>
+    <button class="btn btn-outline-primary" onclick="cambiarPlaylist('Ciclo 2012')">Ciclo 2012</button>
+  </div>
+</div>
+
+    <div class="ratio ratio-16x9">
+      <iframe id="video-player" src="https://www.youtube.com/embed/videoseries?list=PLmbfk8woKFI3_AQBa_VlPAJPSvC9a_sez" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- GALERIA DE FOTOS CON SCROLL HORIZONTAL -->
+  <section id="galeria" class="container py-5">
+    <h2 class="mb-4">Galería de Álbumes</h2>
+
+    <!-- Scroll horizontal de botones -->
+    <div class="scrolling-wrapper d-flex flex-row overflow-auto gap-2 mb-4" id="album-buttons">
+      <!-- Botones se insertan vía JavaScript -->
+    </div>
+
+    <!-- Imagen principal del álbum seleccionado -->
+    <div id="embed-container" class="text-center">
+      <div id="embedImg" style="min-height: 600px;">
+        <!-- Aquí se carga el iframe -->
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- Estilos para scroll horizontal -->
+<style>
+  .scrolling-wrapper {
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+  .scrolling-wrapper button {
+    white-space: normal;
+    flex: 0 0 auto;
+  }
+</style>
+
+<!-- INICIO -->
+  <section id="quienes-somos" class="container py-5">
+    <h1 class="yeso-texto">Colectivo de Músicos Yeso</h1>
+    <p>Este sitio presenta una recopilación de fotos, videos y recuerdos del colectivo de músicos Yeso que existió entre 2012 y 2016 en
+      Canelones ciudad.
+      Colectivo que trabajó por motus propio principalmente para generar espectáculos en vivo y clínicas en menor medida.
+      Cinco años de actividad llegando a convocar 38 proyectos locales, y 34 invitados de otras ciudades
+    </p>
+  </section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  &copy; Web creada por Agustín Morales y Luca González Somma - 2025.
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // YouTube playlists
+  const listas = {
+    "Música de Acá pa Acá": "PLmbfk8woKFI3_AQBa_VlPAJPSvC9a_sez",
+    "Ciclo 2016": "PLmbfk8woKFI0HPe7yId8ZwubnRoH2-O5C",
+    "Ciclo 2015": "PLmbfk8woKFI24hj_GaVjR_f0j6exIEbou",
+    "Ciclo 2014": "PLmbfk8woKFI1e91MwGKBFBCysNkjdi-M7",
+    "Ciclo 2013": "PLmbfk8woKFI2WajA5NmPB3DRztNGz6B_d",
+    "Ciclo 2012": "PLmbfk8woKFI2_8PqYi8gk1PaSXSg-7lRo"
+  };
+
+  function cambiarPlaylist(nombre) {
+    document.getElementById("playlist-title").textContent = nombre;
+    document.getElementById("video-player").src = `https://www.youtube.com/embed/videoseries?list=${listas[nombre]}`;
+  }
+
+  // Álbumes Flickr con URL para iframe
+const albums = {
+  "2012 - Mitto y Rollers": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326256547",
+  "2012 - Francisco Astorga y Pipo Palmera": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326253871",
+  "2012 - LongPlay e Iguana Macho": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326737326",
+  "2012 - Jum y Sympatheia": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326762819",
+  "2012 - Los Triangulitos & Rabino con Limón": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326737451",
+  "2012 - Autorip y Los Ravengers": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326741987",
+  "2012 - Blister, Redd House y Cloudy Days": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326762519",
+  "2013 - Jum y Los Antilopes": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326737561",
+  "2013 - Longplay y Blister": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326758588",
+  "2013 - Absurdo y Ravengers": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326764217",
+  "2013 - Autorip y AguaSanta": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326784189",
+  "2013 - Ojo Negro y Los Intrusos": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326764417",
+  "2013 - Guacho y Rabino con Limón": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326755915",
+  "2013 - Triangulitos y ReddHouse": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326780273",
+  "2013 - Cuando chocan los planetas, Sympatheia y Cadaver Exquisito": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326764617",
+  "2013 - Rollers, Buena Gente y Fede Alpuin": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326760061",
+  "2014 - Clínica de Groove": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326760281",
+  "2014 - Clínica Monitoreo": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326784919",
+  "2014 - Música de Acá pa Acá DÍA 1": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326760451",
+  "2014 - Mesa Redonda con Edgardo Falero": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326760276",
+  "2014 - Música de Acá pa Acá DÍA 3": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326765197",
+  "2014 - Música de Acá pa Acá DÍA 4": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326765287",
+  "2015 - Música de Acá pa Acá DÍA 2 Reprogramado": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326765342",
+  "2015 - Los Ultraman & Alucinaciones en familia": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326765412",
+  "2016 - Wilsound y Los Ultraman (Poesía Pabloski)": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326872578",
+  "2016 - Trauma": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326857782",
+  "2016 - Los Pollos Hermanos y Franshiuff": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326879304",
+  "2016 - Cala Lopez y Florencia Gamba (Poesía Francesca Senna)": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326852986",
+  "2016 - Delouners y Surpluss (Poesía Paula Cameto)": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326872723",
+  "2016 - La Culpa es de Benito": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326858037",
+  "2016 - Muga y Contra las Cuerdas": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326872918",
+  "2016 - Ahi va bo!": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326853391",
+  "2016 - Neo Slender y Acoplados": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326853526",
+  "2016 - Jum y Mareos (Poesía Matías Iguíniz)": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326879299",
+  "2016 - Monghetto y La Pena del Diablo": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326873413",
+  "2016 - Agumón y Fucking Lemon": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326873543",
+  "2016 - Chetco Howma": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326879294",
+  "2016 - Trauma y Hablan por la Espalda": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326879489",
+  "2016 - Otra cosa es con Bigote y Florencia Gamba": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326879289",
+  "2016 - Paranautas y Fumata (Poesía Hoski)": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326873613",
+  "2016 - La Grulla y Mocchi": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326853871",
+  "2016 - Raul Jaimés y La Lagartija Nomá": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326879284",
+  "2016 - Santi Batello y Lapasta Etchenique": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326879279",
+  "2016 - Fran Puentes Feraza y Martín Gallo": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326879274",
+  "2016 - Color Horror y Cadaver Exquisito": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326879269",
+  "2016 - Mática": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326879264",
+  "2016 - Cuchillo Sánchez y los Cobardes, Bad Motherfuckers Club, Simon Chainsaw, Eternos Pecadores": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326879259",
+  "2016 - En Championes y Fran Puentes Feraza": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326879254",
+  "2016 - Guacho y Los Oxford": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326878944",
+  "2016 - Música de Acá pa Acá": "https://www.flickr.com/photos/yesocanelonesuy/albums/72177720326879739"
+};
+
+const albumButtonsContainer = document.getElementById("album-buttons");
+const embedContainer = document.getElementById("embedImg");
+
+  // Cargar el primer álbum al inicio
+  function cargarPrimerAlbum() {
+    const firstTitle = Object.keys(albums)[0];
+    if (firstTitle) {
+      embedContainer.innerHTML = `<iframe src="${albums[firstTitle]}/player/" width="800" height="600" frameborder="0" allowfullscreen></iframe>`;
+    }
+  }
+
+  for (const [title, url] of Object.entries(albums)) {
+    const btn = document.createElement("button");
+    btn.className = "btn btn-outline-primary btn-sm";
+    btn.textContent = title;
+    btn.onclick = () => {
+      embedContainer.innerHTML = `<iframe src="${url}/player/" width="800" height="600" frameborder="0" allowfullscreen></iframe>`;
+    };
+    albumButtonsContainer.appendChild(btn);
+  }
+
+  window.addEventListener('DOMContentLoaded', cargarPrimerAlbum);
+</script>
+
+</body>
+</html>
+
+

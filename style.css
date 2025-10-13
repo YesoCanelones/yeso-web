@@ -1,0 +1,47 @@
+body {
+  padding-top: 70px; 
+}
+
+.carousel-item img {
+  height: 600px;        
+  object-fit: cover;    
+}
+
+#carouselYeso {
+  max-width: 90%;    
+  margin: 0 auto;    
+  border-radius: 10px; 
+  overflow: hidden;    
+}
+
+.embed-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.embed-wrapper iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+.yeso-texto {
+  text-align: center;
+  font-weight: bold;   /* opcional, para resaltarlo */
+  font-size: 1.5rem;   /* opcional, más grande */
+  margin-top: 20px;    /* opcional, espacio hacia arriba */
+}
+
+#que-es-yeso h2 {
+  text-align: center;
+  font-weight: bold;   /* opcional */
+  font-size: 2rem;     /* opcional, más grande que el body normal */
+  margin-bottom: 20px; /* espacio debajo del título */
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem; /* opcional, ajustar según prefieras */
+  margin-bottom: 20px; /* opcional, espacio debajo del título */
+}
