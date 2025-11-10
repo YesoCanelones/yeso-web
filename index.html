@@ -186,7 +186,9 @@
   function cambiarPlaylist(nombre) {
   const listId = listas[nombre];
   const iframe = document.getElementById("video-player");
-  iframe.src = `https://www.youtube.com/embed/videoseries?list=${listId}&t=${Date.now()}`;
+  const newIframe = iframe.cloneNode(true);
+  newIframe.src = `https://www.youtube.com/embed/videoseries?list=${listId}`;
+  iframe.parentNode.replaceChild(newIframe, iframe);
 }
 
   
