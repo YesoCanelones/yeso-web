@@ -1,12 +1,10 @@
-/* ======== ESTILOS GENERALES ======== */
-
+/* estilos generales */
 body {
-  padding-top: 70px; 
+  padding-top: 70px;
   font-family: Arial, sans-serif;
   overflow-x: hidden;
 }
 
-/* Títulos */
 h1, h2 {
   text-align: center;
   font-weight: bold;
@@ -22,15 +20,29 @@ h2 {
   font-size: 2rem;
 }
 
-/* ======== NAVBAR ======== */
+section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  scroll-margin-top: 90px;
+}
 
+section h1,
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/* navbar */
 .navbar-nav .nav-link {
   padding: 0.5rem 1rem;
 }
 
 @media (max-width: 768px) {
   .navbar-collapse {
-    background-color: #212529; 
+    background-color: #212529;
     padding: 1rem;
   }
 
@@ -39,8 +51,7 @@ h2 {
   }
 }
 
-/* ======== CARRUSEL ======== */
-
+/* carrusel */
 .carousel-container {
   max-width: 100%;
   overflow: hidden;
@@ -49,7 +60,7 @@ h2 {
 .carousel-item img {
   width: 100%;
   height: auto;
-  max-height: 80vh; 
+  max-height: 80vh;
   object-fit: cover;
 }
 
@@ -60,41 +71,18 @@ h2 {
   overflow: hidden;
 }
 
-/* ======== ESPACIADO ENTRE SECCIONES ======== */
-
-section {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.embed-wrapper,
-#album-buttons,
-.flickr-embed,
 #que-es-yeso,
 #videos,
 #galeria,
-#contacto {
+#contacto,
+#album-buttons,
+.embed-wrapper,
+.flickr-embed {
   margin-top: 60px;
   margin-bottom: 60px;
 }
 
-
-@media (max-width: 768px) {
-  section,
-  .embed-wrapper,
-  #album-buttons,
-  .flickr-embed,
-  #que-es-yeso,
-  #videos,
-  #galeria,
-  #contacto {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-}
-
-/* ======== VIDEOS (YouTube) ======== */
-
+/* videos */
 .embed-wrapper {
   max-width: 900px;
   margin: 0 auto;
@@ -106,19 +94,11 @@ section {
   border: none;
 }
 
-/* Ajustar iframes en móviles */
-@media (max-width: 768px) {
-  iframe {
-    height: 300px !important;
-  }
-}
-
-/* ======== GALERÍA FLICKR ======== */
-
+/* flikr */
 .flickr-embed {
   position: relative;
   width: 100%;
-  padding-bottom: 75%; 
+  padding-bottom: 75%;
   height: 0;
   overflow: hidden;
 }
@@ -143,41 +123,92 @@ section {
   flex: 0 0 auto;
 }
 
-/* ======== BOTONES ======== */
-
+/* botones */
 .btn {
   border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
-.btn-group .btn {
-  margin: 2px;
+/* Botones principales */
+.btn-outline-primary {
+  color: #0d6efd !important;
+  border-color: #0d6efd !important;
+  background-color: transparent !important;
+  border-width: 2px !important;
+  border-radius: 6px !important;
+  font-size: 1rem !important;
+  padding: 10px 20px !important;
 }
 
-@media (max-width: 768px) {
-  .btn {
-    font-size: 0.9rem;
-    padding: 0.5rem;
-  }
+.btn-outline-primary:hover,
+.btn-outline-primary.active {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+  border-color: #0d6efd !important;
 }
 
-/* ======== FOOTER ======== */
+/* Grupos de botones */
+.btn-group,
+#album-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 
+#album-buttons {
+  display: flex;
+  flex-wrap: nowrap;         
+  overflow-x: auto;          
+  scroll-behavior: smooth;   
+  -webkit-overflow-scrolling: touch; 
+  gap: 10px;
+  padding: 10px 0;
+  justify-content: flex-start; 
+}
+
+#album-buttons .btn {
+  flex: 0 0 auto;         
+  white-space: normal;
+  margin: 5px;
+  min-width: 180px;          
+}
+
+
+#album-buttons::-webkit-scrollbar {
+  height: 8px;
+}
+
+#album-buttons::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 4px;
+}
+
+#album-buttons::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.btn-group .btn,
+#album-buttons .btn {
+  margin: 5px;
+  flex: 0 0 auto;
+  white-space: normal;
+}
+
+/* footer */
 footer {
   background-color: #212529;
   color: white;
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+  padding: 30px 1rem;
+  font-size: 0.95rem;
+  margin-top: 60px;
 }
 
-@media (max-width: 768px) {
-  footer {
-    font-size: 0.8rem;
-  }
-}
-
-/* ======== RESPONSIVE AJUSTES ADICIONALES ======== */
-
+/* responsive */
 @media (max-width: 768px) {
   h1, h2 {
     font-size: 1.5rem;
@@ -187,39 +218,30 @@ footer {
     max-width: 100%;
   }
 
-  .flickr-embed {
-    padding-bottom: 100%;
+  section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
-}
 
-section {
-  padding-top: 80px;     
-  padding-bottom: 80px;  
-  scroll-margin-top: 90px; 
-}
+  .embed-wrapper iframe {
+    height: 300px !important;
+  }
 
-section h2, section h1 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-weight: 600;
-}
+  #videos iframe {
+    margin-bottom: 60px !important;
+  }
 
+  #galeria {
+    margin-top: 80px !important;
+  }
 
-#carrusel {
-  margin-top: 90px;
-}
+  #album-buttons {
+    margin-bottom: 40px;
+  }
 
-
-#quienes-somos {
-  text-align: center;
-  line-height: 1.6;
-}
-
-
-footer {
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-top: 60px;
-  font-size: 0.95rem;
+  footer {
+    font-size: 0.8rem;
+  }
 }
