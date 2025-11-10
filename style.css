@@ -431,5 +431,16 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  #galeria {
+    margin-bottom: 1.5rem !important; 
+  }
+
+
+  footer, .texto-final, #contacto {
+    margin-top: 1rem !important; 
+  }
+}
+
 
 
