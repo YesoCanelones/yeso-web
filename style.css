@@ -191,3 +191,35 @@ footer {
     padding-bottom: 100%;
   }
 }
+
+section {
+  padding-top: 80px;     
+  padding-bottom: 80px;  
+  scroll-margin-top: 90px; 
+}
+
+section h2, section h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+
+#carrusel {
+  margin-top: 90px;
+}
+
+
+#quienes-somos {
+  text-align: center;
+  line-height: 1.6;
+}
+
+
+footer {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 60px;
+  font-size: 0.95rem;
+}
