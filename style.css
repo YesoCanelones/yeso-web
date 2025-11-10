@@ -297,48 +297,6 @@ footer {
     font-size: 1.5rem;
   }
 
-.scroll-fade {
-  position: relative;
-}
-
-.scroll-fade::before,
-.scroll-fade::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 40px;
-  height: 100%;
-  pointer-events: none;
-  z-index: 2;
-  transition: opacity 0.3s ease;
-}
-
-.scroll-fade::before {
-  left: 0;
-  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-}
-
-.scroll-fade::after {
-  right: 0;
-  background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-}
-
-.dark-scroll-fade::before {
-  background: linear-gradient(to right, rgba(33,37,41,1) 0%, rgba(33,37,41,0) 100%);
-}
-
-.dark-scroll-fade::after {
-  background: linear-gradient(to left, rgba(33,37,41,1) 0%, rgba(33,37,41,0) 100%);
-}
-
-@media (max-width: 768px) {
-  .scroll-fade {
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch !important;
-  }
-}
-
-
   #carouselYeso {
     max-width: 100%;
   }
@@ -426,9 +384,6 @@ footer {
     white-space: normal !important;
   }
 
-  .scroll-fade {
-    position: relative !important;
-  }
 }
 
 @media (max-width: 768px) {
