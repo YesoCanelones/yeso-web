@@ -184,9 +184,10 @@
   };
 
   function cambiarPlaylist(nombre) {
-    document.getElementById("playlist-title").textContent = nombre;
-    document.getElementById("video-player").src = `https://www.youtube.com/embed/videoseries?list=${listas[nombre]}`;
-  }
+  const titleElement = document.getElementById("playlist-title");
+  if (titleElement) titleElement.textContent = nombre;
+  document.getElementById("video-player").src = `https://www.youtube.com/embed/videoseries?list=${listas[nombre]}`;
+}
 
   
 const albums = {
