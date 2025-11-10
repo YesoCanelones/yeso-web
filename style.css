@@ -245,3 +245,49 @@ footer {
     font-size: 0.8rem;
   }
 }
+
+.btn-group .btn,
+#album-buttons .btn {
+  border-radius: 6px !important;
+  font-size: 1rem !important;
+  padding: 10px 20px !important;
+  border-width: 2px !important;
+  color: #0d6efd !important;
+  border-color: #0d6efd !important;
+  background-color: transparent !important;
+  transition: all 0.3s ease !important;
+  flex: 0 0 auto;
+  min-width: 160px;
+}
+
+.btn-group .btn:hover,
+#album-buttons .btn:hover,
+.btn-group .btn.active,
+#album-buttons .btn.active {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+  border-color: #0d6efd !important;
+}
+
+@media (max-width: 768px) {
+  .btn-group .btn,
+  #album-buttons .btn {
+    font-size: 1rem !important;
+    padding: 10px 20px !important;
+    border-radius: 6px !important;
+    min-width: 160px !important;
+    white-space: normal !important;
+  }
+
+  .btn-group {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+
+  #album-buttons {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    justify-content: flex-start !important;
+  }
+}
