@@ -1,18 +1,66 @@
+/* ======== ESTILOS GENERALES ======== */
+
 body {
-  padding-top: 70px; 
+  padding-top: 70px; /* espacio para el navbar fijo */
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Títulos */
+h1, h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h1.yeso-texto {
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* ======== NAVBAR ======== */
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #212529; /* mismo color que navbar */
+    padding: 1rem;
+  }
+
+  .navbar-brand img {
+    height: 25px;
+  }
+}
+
+/* ======== CARRUSEL ======== */
+
+.carousel-container {
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .carousel-item img {
-  height: 600px;        
-  object-fit: cover;    
+  width: 100%;
+  height: auto;
+  max-height: 80vh; /* adapta al alto del dispositivo */
+  object-fit: cover;
 }
 
 #carouselYeso {
-  max-width: 90%;    
-  margin: 0 auto;    
-  border-radius: 10px; 
-  overflow: hidden;    
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
 }
+
+/* ======== VIDEOS (YouTube) ======== */
 
 .embed-wrapper {
   max-width: 900px;
@@ -25,23 +73,88 @@ body {
   border: none;
 }
 
-.yeso-texto {
-  text-align: center;
-  font-weight: bold;   /* opcional, para resaltarlo */
-  font-size: 1.5rem;   /* opcional, más grande */
-  margin-top: 20px;    /* opcional, espacio hacia arriba */
+/* Ajustar iframes en móviles */
+@media (max-width: 768px) {
+  iframe {
+    height: 300px !important;
+  }
 }
 
-#que-es-yeso h2 {
-  text-align: center;
-  font-weight: bold;   /* opcional */
-  font-size: 2rem;     /* opcional, más grande que el body normal */
-  margin-bottom: 20px; /* espacio debajo del título */
+/* ======== GALERÍA FLICKR ======== */
+
+.flickr-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%; 
+  height: 0;
+  overflow: hidden;
 }
 
-h2 {
+.flickr-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.scrolling-wrapper {
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.scrolling-wrapper button {
+  white-space: normal;
+  flex: 0 0 auto;
+}
+
+/* ======== BOTONES ======== */
+
+.btn {
+  border-radius: 10px;
+}
+
+.btn-group .btn {
+  margin: 2px;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}
+
+/* ======== FOOTER ======== */
+
+footer {
+  background-color: #212529;
+  color: white;
   text-align: center;
-  font-weight: bold;
-  font-size: 2rem; /* opcional, ajustar según prefieras */
-  margin-bottom: 20px; /* opcional, espacio debajo del título */
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* ======== RESPONSIVE AJUSTES ADICIONALES ======== */
+
+@media (max-width: 768px) {
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  #carouselYeso {
+    max-width: 100%;
+  }
+
+  .flickr-embed {
+    padding-bottom: 100%;
+  }
 }
